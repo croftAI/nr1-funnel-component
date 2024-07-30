@@ -55,7 +55,7 @@ export default class FunnelComponent extends React.Component {
             return `${this.queryMap[s.label]}:nrql(query: "${this._constructFunnelNrql(s)}") {
               results
             }`;
-          })}
+          }).join(' ')}
         }
       }
     }`;
